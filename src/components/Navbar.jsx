@@ -1,35 +1,37 @@
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 
 export default function Navbar() {
+  const linkClass = ({ isActive }) =>
+    isActive
+      ? "text-orange-500 font-semibold border-b-2 border-orange-500 pb-1"
+      : "hover:text-orange-500 transition";
+
   return (
     <header className="fixed top-0 left-0 w-full z-50 bg-white shadow-md">
       <div className="max-w-7xl mx-auto px-6">
         <div className="flex items-center justify-between h-16">
           {/* LOGO */}
-          <Link to="/" className="text-2xl font-bold text-orange-500">
+          <NavLink to="/" className="text-2xl font-bold text-orange-500">
             TravelExplorer
-          </Link>
+          </NavLink>
 
           {/* MENU */}
           <nav className="hidden md:flex gap-8 font-medium text-gray-700">
-            <Link to="/" className="hover:text-orange-500 transition">
+            <NavLink to="/" className={linkClass}>
               Home
-            </Link>
+            </NavLink>
 
-            <Link
-              to="/destination/agra"
-              className="hover:text-orange-500 transition"
-            >
+            <NavLink to="/destinations" className={linkClass}>
               Destinations
-            </Link>
+            </NavLink>
 
-            <Link to="#about" className="hover:text-orange-500 transition">
+            <NavLink to="/about" className={linkClass}>
               About
-            </Link>
+            </NavLink>
 
-            <Link to="#contact" className="hover:text-orange-500 transition">
+            <NavLink to="/contact" className={linkClass}>
               Contact
-            </Link>
+            </NavLink>
           </nav>
 
           {/* RIGHT SIDE */}

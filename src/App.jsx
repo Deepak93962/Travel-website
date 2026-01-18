@@ -5,6 +5,7 @@ import Footer from "./components/Footer";
 import Home from "./pages/Home";
 import Destination from "./pages/Destinations";
 import Destinations from "./pages/Destinations";
+import About from "./pages/About";
 
 export default function App() {
   return (
@@ -15,6 +16,7 @@ export default function App() {
         <Route path="/" element={<Home />} />
         <Route path="/destinations" element={<Destinations />} />
         <Route path="/destination/:name" element={<Destination />} />
+        <Route path="/About" element={<About />} />
       </Routes>
 
       
