@@ -1,35 +1,79 @@
 export default function Footer() {
   return (
-    <footer className="bg-gray-900 text-gray-300 mt-20">
-      <div className="max-w-7xl mx-auto px-6 py-10 grid grid-cols-1 md:grid-cols-3 gap-8">
-        {/* Brand */}
-        <div>
-          <h2 className="text-xl font-bold text-white">TravelExplorer</h2>
-          <p className="mt-3 text-sm">
-            Discover destinations, local food, and travel routes easily.
+    <footer className="bg-[#e6ead1] text-gray-800 mt-20">
+      <div className="max-w-7xl mx-auto px-6 py-16">
+        {/* TOP SECTION */}
+        <div className="grid md:grid-cols-4 gap-12">
+          {/* BRAND */}
+          <div>
+            <h2 className="text-2xl font-bold flex items-center gap-2">
+              ✈️ TravelExplorer
+            </h2>
+
+            <p className="mt-4 text-sm">
+              Amphitheatre Parkway, Mountain View, California
+            </p>
+
+            <div className="mt-4 space-y-2 text-sm">
+              <p className="flex items-center gap-2">📞 +123 456 789</p>
+              <p className="flex items-center gap-2">✉️ hello@nex.tour</p>
+            </div>
+
+            {/* SOCIAL */}
+            <div className="flex gap-4 mt-4 text-lg">
+              <span className="cursor-pointer">🌐</span>
+              <span className="cursor-pointer">🐦</span>
+              <span className="cursor-pointer">▶️</span>
+            </div>
+          </div>
+
+          {/* MENU */}
+          <div>
+            <h3 className="font-semibold uppercase mb-4">Menu</h3>
+            <ul className="space-y-2 text-sm">
+              <li className="hover:underline cursor-pointer">Guide</li>
+              <li className="hover:underline cursor-pointer">Destinations</li>
+              <li className="hover:underline cursor-pointer">Travel Blog</li>
+              <li className="hover:underline cursor-pointer">Testimonials</li>
+            </ul>
+          </div>
+
+          {/* COMPANY */}
+          <div>
+            <h3 className="font-semibold uppercase mb-4">Company</h3>
+            <ul className="space-y-2 text-sm">
+              <li className="hover:underline cursor-pointer">About</li>
+              <li className="hover:underline cursor-pointer">Accommodation</li>
+              <li className="hover:underline cursor-pointer">Flights</li>
+              <li className="hover:underline cursor-pointer">Our Team</li>
+            </ul>
+          </div>
+
+          {/* LINKS */}
+          <div>
+            <h3 className="font-semibold uppercase mb-4">Links</h3>
+            <ul className="space-y-2 text-sm">
+              <li className="hover:underline cursor-pointer">Booking</li>
+              <li className="hover:underline cursor-pointer">Contact</li>
+              <li className="hover:underline cursor-pointer">Help Center</li>
+            </ul>
+          </div>
+        </div>
+
+        {/* DIVIDER */}
+        <div className="border-t border-gray-400/40 mt-12 pt-6 flex flex-col md:flex-row justify-between text-sm">
+          <p>
+            Powered by{" "}
+            <span className="text-lime-600 font-medium">SocioLib</span>.
           </p>
-        </div>
 
-        {/* Links */}
-        <div>
-          <h3 className="text-lg font-semibold text-white">Quick Links</h3>
-          <ul className="mt-3 space-y-2 text-sm">
-            <li>Home</li>
-            <li>Destinations</li>
-            <li>About</li>
-          </ul>
+          <div className="flex gap-6 mt-4 md:mt-0">
+            <span className="hover:underline cursor-pointer">
+              Privacy Policy
+            </span>
+            <span className="hover:underline cursor-pointer">Our Terms</span>
+          </div>
         </div>
-
-        {/* Contact */}
-        <div>
-          <h3 className="text-lg font-semibold text-white">Contact</h3>
-          <p className="mt-3 text-sm">Email: support@travelexplorer.com</p>
-          <p className="text-sm">India</p>
-        </div>
-      </div>
-
-      <div className="border-t border-gray-700 text-center py-4 text-sm">
-        © {new Date().getFullYear()} TravelExplorer. All rights reserved.
       </div>
     </footer>
   );

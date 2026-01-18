@@ -3,22 +3,47 @@ import heroImg from "../assets/hero.png";
 
 export default function Home() {
   return (
-    <div
-      className="h-screen bg-cover bg-center"
+    <section
+      className="h-screen w-full bg-cover bg-center relative"
       style={{ backgroundImage: `url(${heroImg})` }}
     >
-      {/* Dark overlay */}
-      <div className="h-full bg-black/50 flex flex-col justify-center items-center text-white px-4">
-        <h1 className="text-4xl md:text-5xl font-bold mb-4 text-center">
-          Find Your Perfect Destination
-        </h1>
+      {/* Gradient Overlay */}
+      <div className="absolute inset-0 bg-gradient-to-r from-black/70 via-black/40 to-black/10"></div>
 
-        <p className="mb-6 text-center text-lg">
-          Discover places, food & travel routes
-        </p>
+      {/* Content */}
+      <div className="relative z-10 h-full flex items-center">
+        <div className="max-w-7xl mx-auto px-6 w-full">
+          <div className="max-w-xl text-white">
+            <span className="uppercase tracking-widest text-sm text-orange-400">
+              Let’s Go
+            </span>
 
-        <SearchBar />
+            <h1 className="text-5xl md:text-6xl font-extrabold leading-tight mt-3">
+              Explore Your <br /> Favorite Destination
+            </h1>
+
+            <p className="mt-5 text-gray-200 text-lg">
+              Discover places, food & travel routes across India with ease.
+            </p>
+
+            {/* Buttons */}
+            <div className="mt-8 flex flex-wrap gap-4">
+              <button className="bg-orange-500 hover:bg-orange-600 transition px-6 py-3 rounded text-white font-semibold">
+                Explore Now
+              </button>
+
+              <button className="border border-white px-6 py-3 rounded text-white hover:bg-white hover:text-black transition">
+                Contact Us
+              </button>
+            </div>
+
+            {/* Search Bar */}
+            <div className="mt-8 max-w-md">
+              <SearchBar />
+            </div>
+          </div>
+        </div>
       </div>
-    </div>
+    </section>
   );
 }
