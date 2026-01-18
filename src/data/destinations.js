@@ -8,7 +8,7 @@ export default [
       {
         name: "Taj Mahal",
         description: "17th-century white marble mausoleum built by Shah Jahan for Mumtaz Mahal.",
-        image: "agra_taj",
+        image: "agra",
         image_search: "Taj Mahal Agra"
       },
       {
@@ -95,7 +95,7 @@ export default [
     slug: "delhi",
     description: "India’s capital — a vibrant mix of history, markets, and food scenes across New and Old Delhi.",
     famous_places: [
-      { name: "Red Fort", description: "Historic Mughal fort and UNESCO site.", image: "assets/delhi_redfort.jpg", image_search: "Red Fort Delhi" },
+      { name: "Red Fort", description: "Historic Mughal fort and UNESCO site.", image: "delhi", image_search: "Red Fort Delhi" },
       { name: "Qutub Minar", description: "Tall minaret and UNESCO site with Afghan architecture.", image: "assets/delhi_qutub.jpg", image_search: "Qutub Minar" },
       { name: "India Gate", description: "War memorial and popular evening lawn.", image: "assets/india_gate.jpg", image_search: "India Gate Delhi" },
       { name: "Humayun's Tomb", description: "Mughal tomb that inspired the Taj Mahal's architecture.", image: "assets/humayun_tomb.jpg", image_search: "Humayun's Tomb Delhi" },
@@ -120,7 +120,7 @@ export default [
     slug: "mumbai",
     description: "The financial capital — coastal city with colonial-era gateways, vibrant street-food and nightlife.",
     famous_places: [
-      { name: "Gateway of India", description: "Iconic waterfront monument built during the British era.", image: "assets/mumbai_gateway.jpg", image_search: "Gateway of India Mumbai" },
+      { name: "Gateway of India", description: "Iconic waterfront monument built during the British era.", image: "mumbai", image_search: "Gateway of India Mumbai" },
       { name: "Marine Drive", description: "Seafront promenade known as the Queen's Necklace at night.", image: "assets/marine_drive.jpg", image_search: "Marine Drive Mumbai" },
       { name: "Elephanta Caves", description: "Rock-cut cave temples on an island near Mumbai.", image: "assets/elephanta.jpg", image_search: "Elephanta Caves" },
       { name: "Chhatrapati Shivaji Terminus", description: "Victorian Gothic railway station and UNESCO site.", image: "assets/cst.jpg", image_search: "Chhatrapati Shivaji Terminus" },
@@ -145,7 +145,7 @@ export default [
     slug: "jaipur",
     description: "Pink City of Rajasthan — forts, palaces, and colorful markets.",
     famous_places: [
-      { name: "Amber Fort", description: "Large hilltop fort with ornate halls and views of Maota Lake.", image: "assets/amber_fort.jpg", image_search: "Amber Fort Jaipur" },
+      { name: "Amber Fort", description: "Large hilltop fort with ornate halls and views of Maota Lake.", image: "jaipur", image_search: "Amber Fort Jaipur" },
       { name: "Hawa Mahal", description: "Palace of winds — facade with many small windows.", image: "assets/hawa_mahal.jpg", image_search: "Hawa Mahal Jaipur" },
       { name: "City Palace", description: "Historic royal residence with museums and courtyards.", image: "assets/city_palace.jpg", image_search: "City Palace Jaipur" },
       { name: "Jantar Mantar", description: "Astronomical observatory with large stone instruments.", image: "assets/jantar_mantar.jpg", image_search: "Jantar Mantar Jaipur" },
@@ -170,7 +170,7 @@ export default [
     slug: "varanasi",
     description: "One of the world’s oldest living cities — spiritual ghats on the Ganges, evening aarti and temples.",
     famous_places: [
-      { name: "Dashashwamedh Ghat", description: "Main ghat known for grand evening Ganga aarti ceremonies.", image: "assets/dashashwamedh.jpg", image_search: "Dashashwamedh Ghat Varanasi" },
+      { name: "Dashashwamedh Ghat", description: "Main ghat known for grand evening Ganga aarti ceremonies.", image: "varanasi", image_search: "Dashashwamedh Ghat Varanasi" },
       { name: "Kashi Vishwanath Temple", description: "Famous Hindu shrine dedicated to Lord Shiva.", image: "assets/kashi_vishwanath.jpg", image_search: "Kashi Vishwanath Temple" },
       { name: "Manikarnika Ghat", description: "Historic cremation ghat with spiritual significance.", image: "assets/manikarnika.jpg", image_search: "Manikarnika Ghat Varanasi" },
       { name: "Sarnath", description: "Nearby Buddhist site where Buddha gave his first sermon.", image: "assets/sarnath.jpg", image_search: "Sarnath Varanasi" },
@@ -188,5 +188,102 @@ export default [
       { name: "Lassi", description: "Thick sweet or salted yogurt drink popular across the city.", image: "assets/lassi.jpg", image_search: "Varanasi lassi" },
       { name: "Tamatar Chaat", description: "Tangy tomato-based street chaat unique to the region.", image: "assets/tamatar_chaat.jpg", image_search: "Tamatar Chaat Varanasi" }
     ]
-  }
+  },
+  {
+  name: "Jaipur",
+  slug: "jaipur",
+  description: "The Pink City of India — royal forts, palaces, vibrant bazaars and rich Rajasthani culture.",
+  famous_places: [
+    { name: "Hawa Mahal", description: "Iconic Palace of Winds with honeycomb-style windows.", image: "jaipur", image_search: "Hawa Mahal Jaipur" },
+    { name: "Amber Fort", description: "Majestic hilltop fort known for its artistic Hindu-style elements.", image: "Jaipur", image_search: "Amber Fort Jaipur" },
+    { name: "City Palace", description: "Royal residence with courtyards, museums and gardens.", image: "assets/city_palace.jpg", image_search: "City Palace Jaipur" },
+    { name: "Jantar Mantar", description: "UNESCO-listed astronomical observatory.", image: "assets/jantar_mantar.jpg", image_search: "Jantar Mantar Jaipur" },
+    { name: "Nahargarh Fort", description: "Fort offering panoramic views of Jaipur city.", image: "assets/nahargarh.jpg", image_search: "Nahargarh Fort Jaipur" }
+  ],
+  transport: {
+    train: { name: "Jaipur Junction", description: "Main railway station with nationwide connectivity.", image: "assets/jaipur_station.jpg", image_search: "Jaipur Junction railway station" },
+    bus: { name: "Sindhi Camp Bus Stand", description: "Major bus terminal for state and interstate routes.", image: "assets/jaipur_bus.jpg", image_search: "Sindhi Camp Bus Stand Jaipur" },
+    flight: { name: "Jaipur International Airport (JAI)", description: "Airport connecting Jaipur to major Indian cities.", image: "assets/jaipur_airport.jpg", image_search: "Jaipur Airport JAI" }
+  },
+  foods: [
+    { name: "Dal Baati Churma", description: "Traditional Rajasthani meal of baked wheat balls and sweet churma.", image: "assets/dal_baati.jpg", image_search: "Dal Baati Churma Jaipur" },
+    { name: "Pyaaz Kachori", description: "Deep-fried snack stuffed with spicy onion filling.", image: "assets/pyaaz_kachori.jpg", image_search: "Pyaaz Kachori Jaipur" },
+    { name: "Ghewar", description: "Popular disc-shaped Rajasthani sweet.", image: "assets/ghewar.jpg", image_search: "Ghewar Jaipur" },
+    { name: "Laal Maas", description: "Spicy red mutton curry made with chilies.", image: "assets/laal_maas.jpg", image_search: "Laal Maas Rajasthan" },
+    { name: "Ker Sangri", description: "Traditional desert bean and berry vegetable dish.", image: "assets/ker_sangri.jpg", image_search: "Ker Sangri Rajasthan" }
+  ]
+},
+{
+  name: "Goa",
+  slug: "goa",
+  description: "India’s beach paradise — golden beaches, nightlife, Portuguese heritage and seafood.",
+  famous_places: [
+    { name: "Baga Beach", description: "Popular beach known for nightlife and water sports.", image: "goa", image_search: "Baga Beach Goa" },
+    { name: "Calangute Beach", description: "Largest beach in North Goa with lively atmosphere.", image: "assets/calangute.jpg", image_search: "Calangute Beach Goa" },
+    { name: "Basilica of Bom Jesus", description: "UNESCO-listed church with Baroque architecture.", image: "assets/bom_jesus.jpg", image_search: "Basilica of Bom Jesus Goa" },
+    { name: "Fort Aguada", description: "17th-century Portuguese fort overlooking the sea.", image: "assets/fort_aguada.jpg", image_search: "Fort Aguada Goa" },
+    { name: "Dudhsagar Waterfalls", description: "Spectacular four-tiered waterfall on Mandovi river.", image: "assets/dudhsagar.jpg", image_search: "Dudhsagar Waterfalls Goa" }
+  ],
+  transport: {
+    train: { name: "Madgaon Railway Station", description: "Major railhead connecting Goa to other states.", image: "assets/madgaon_station.jpg", image_search: "Madgaon Railway Station Goa" },
+    bus: { name: "Kadamba Bus Stand", description: "State-run bus terminal for local and interstate travel.", image: "assets/goa_bus.jpg", image_search: "Kadamba Bus Stand Goa" },
+    flight: { name: "Goa International Airport (GOI)", description: "Airport serving domestic and international flights.", image: "assets/goa_airport.jpg", image_search: "Goa International Airport Dabolim" }
+  },
+  foods: [
+    { name: "Goan Fish Curry", description: "Spicy coconut-based curry with local spices.", image: "assets/goan_fish_curry.jpg", image_search: "Goan Fish Curry" },
+    { name: "Pork Vindaloo", description: "Famous spicy-sour pork dish with Portuguese influence.", image: "assets/vindaloo.jpg", image_search: "Goan Vindaloo" },
+    { name: "Bebinca", description: "Traditional layered Goan dessert.", image: "assets/bebinca.jpg", image_search: "Bebinca Goan dessert" },
+    { name: "Xacuti", description: "Rich curry made with roasted coconut and spices.", image: "assets/xacuti.jpg", image_search: "Goan Xacuti" },
+    { name: "Prawn Balchao", description: "Fiery prawn pickle-style dish.", image: "assets/prawn_balchao.jpg", image_search: "Prawn Balchao Goa" }
+  ]
+},
+{
+  name: "Amritsar",
+  slug: "amritsar",
+  description: "Holy city of the Sikhs — home to the Golden Temple and vibrant Punjabi culture.",
+  famous_places: [
+    { name: "Golden Temple", description: "Most sacred Sikh shrine with serene holy pool.", image: "amritsar", image_search: "Golden Temple Amritsar" },
+    { name: "Jallianwala Bagh", description: "Historic memorial of India’s freedom struggle.", image: "assets/jallianwala_bagh.jpg", image_search: "Jallianwala Bagh Amritsar" },
+    { name: "Wagah Border", description: "Famous daily retreat ceremony at India–Pakistan border.", image: "assets/wagah_border.jpg", image_search: "Wagah Border ceremony" },
+    { name: "Ram Bagh Gardens", description: "Historic garden built by Maharaja Ranjit Singh.", image: "assets/ram_bagh.jpg", image_search: "Ram Bagh Amritsar" },
+    { name: "Akal Takht", description: "One of the five seats of Sikh religious authority.", image: "assets/akal_takht.jpg", image_search: "Akal Takht Amritsar" }
+  ],
+  transport: {
+    train: { name: "Amritsar Junction", description: "Major railway station with extensive connectivity.", image: "assets/amritsar_station.jpg", image_search: "Amritsar Junction railway station" },
+    bus: { name: "Amritsar Bus Stand", description: "Bus terminal for interstate and local routes.", image: "assets/amritsar_bus.jpg", image_search: "Amritsar Bus Stand" },
+    flight: { name: "Sri Guru Ram Dass Jee Airport (ATQ)", description: "International airport serving Amritsar.", image: "assets/amritsar_airport.jpg", image_search: "Amritsar Airport ATQ" }
+  },
+  foods: [
+    { name: "Amritsari Kulcha", description: "Stuffed bread served with chole and butter.", image: "assets/kulcha.jpg", image_search: "Amritsari Kulcha" },
+    { name: "Lassi", description: "Thick sweet yogurt drink served in large glasses.", image: "assets/amritsar_lassi.jpg", image_search: "Amritsar Lassi" },
+    { name: "Chole Bhature", description: "Spicy chickpea curry with fried bread.", image: "assets/chole_bhature.jpg", image_search: "Chole Bhature Punjab" },
+    { name: "Paneer Tikka", description: "Grilled cottage cheese with spices.", image: "assets/paneer_tikka.jpg", image_search: "Paneer Tikka Amritsar" },
+    { name: "Langar Meal", description: "Free community meal served at Golden Temple.", image: "assets/langar.jpg", image_search: "Golden Temple Langar" }
+  ]
+},
+{
+  name: "Udaipur",
+  slug: "udaipur",
+  description: "The City of Lakes — romantic palaces, serene waters and royal heritage.",
+  famous_places: [
+    { name: "City Palace", description: "Massive palace complex overlooking Lake Pichola.", image: "udaipur", image_search: "City Palace Udaipur" },
+    { name: "Lake Pichola", description: "Scenic artificial lake with boat rides.", image: "assets/lake_pichola.jpg", image_search: "Lake Pichola Udaipur" },
+    { name: "Jag Mandir", description: "Island palace located on Lake Pichola.", image: "assets/jag_mandir.jpg", image_search: "Jag Mandir Udaipur" },
+    { name: "Saheliyon Ki Bari", description: "Garden built for royal ladies with fountains.", image: "assets/saheliyon_ki_bari.jpg", image_search: "Saheliyon Ki Bari Udaipur" },
+    { name: "Monsoon Palace", description: "Hilltop palace offering sunset views.", image: "assets/monsoon_palace.jpg", image_search: "Monsoon Palace Udaipur" }
+  ],
+  transport: {
+    train: { name: "Udaipur City Railway Station", description: "Main railhead for the city.", image: "assets/udaipur_station.jpg", image_search: "Udaipur City railway station" },
+    bus: { name: "Udaipur Bus Stand", description: "Intercity and local bus terminal.", image: "assets/udaipur_bus.jpg", image_search: "Udaipur Bus Stand" },
+    flight: { name: "Maharana Pratap Airport (UDR)", description: "Airport connecting Udaipur to major cities.", image: "assets/udaipur_airport.jpg", image_search: "Udaipur Airport UDR" }
+  },
+  foods: [
+    { name: "Dal Baati Churma", description: "Traditional Rajasthani meal popular in Udaipur.", image: "assets/dal_baati.jpg", image_search: "Dal Baati Churma Udaipur" },
+    { name: "Gatte Ki Sabzi", description: "Gram flour dumplings in spicy gravy.", image: "assets/gatte_ki_sabzi.jpg", image_search: "Gatte Ki Sabzi Rajasthan" },
+    { name: "Kachori", description: "Deep-fried spicy snack served hot.", image: "assets/udaipur_kachori.jpg", image_search: "Udaipur Kachori" },
+    { name: "Rabri", description: "Sweet thickened milk dessert.", image: "assets/rabri.jpg", image_search: "Rabri Udaipur" },
+    { name: "Mirchi Bada", description: "Chili fritter stuffed with spicy filling.", image: "assets/mirchi_bada.jpg", image_search: "Mirchi Bada Rajasthan" }
+  ]
+},
+
 ];
