@@ -17,8 +17,7 @@ export default function App() {
         <Route path="/destination/:name" element={<Destination />} />
       </Routes>
 
-       
-      <Footer />
+      
     </BrowserRouter>
   );
 }

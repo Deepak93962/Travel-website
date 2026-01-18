@@ -1,5 +1,10 @@
 import SearchBar from "../components/SearchBar";
 import heroImg from "../assets/hero.png";
+import Categories from "../components/Categories";
+import Destinations from "./Destinations";
+import Navbar from "../components/Navbar";
+import Footer from "../components/Footer";
+
 
 export default function Home() {
   return (
@@ -44,6 +49,10 @@ export default function Home() {
           </div>
         </div>
       </div>
+      <Destinations/>
+      <Categories/>
+      <Footer/>
     </section>
+
   );
 }

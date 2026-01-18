@@ -7,7 +7,7 @@ export default function Destinations() {
   return (
     <section className="pt-24 pb-16">
       <div className="max-w-7xl mx-auto px-6">
-        {/* ===== HEADER (SS2 STYLE) ===== */}
+         
         <div className="grid md:grid-cols-2 gap-10 items-start mb-14">
           <h1 className="text-4xl md:text-5xl font-extrabold leading-tight">
             Discover Recent <br /> Popular Destinations
@@ -28,7 +28,7 @@ export default function Destinations() {
           </div>
         </div>
 
-        {/* ===== DESTINATION CARDS (SS1 STYLE) ===== */}
+        
         <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-8">
           {destinations.map((city) => (
             <Link
