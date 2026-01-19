@@ -6,7 +6,7 @@ import Home from "./pages/Home";
 import Destination from "./pages/Destination";
 import Destinations from "./pages/Destinations";
 import About from "./pages/About";
-
+import Contact from "./pages/Contact";
 export default function App() {
   return (
     <BrowserRouter>
@@ -17,9 +17,8 @@ export default function App() {
         <Route path="/destinations" element={<Destinations />} />
         <Route path="/destination/:slug" element={<Destination />} />
         <Route path="/About" element={<About />} />
+        <Route path="/contact" element={<Contact />} />
       </Routes>
-
-      
     </BrowserRouter>
   );
 }

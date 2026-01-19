@@ -17,7 +17,7 @@ import agra from "./agra_taj.png";
 import delhi from "./Delhi.jpg";
 import mumbai from "./Mumbai.jpg";
 import jaipur from "./Jaipur.jpg";
-import varanasi from "./varanasi.jpg";
+import varanasi from "./Varanasi.jpg";
 import udaipur from "./Udaipur.jpg";
 import amritsar from "./Amritsar.jpg";
 import goa from "./Goa.jpg";

@@ -5,7 +5,7 @@ import Destinations from "./Destinations";
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
 import WhyChooseUs from "../components/WhyChooseUs";
-
+import { Link } from "react-router-dom";
 
 export default function Home() {
   return (
@@ -38,9 +38,11 @@ export default function Home() {
                 Explore Now
               </button>
 
-              <button className="border border-white px-6 py-3 rounded text-white hover:bg-white hover:text-black transition">
-                Contact Us
-              </button>
+              <Link to="/contact">
+                <button className="border border-white px-6 py-3 rounded text-white hover:bg-white hover:text-black transition">
+                  Contact Us
+                </button>
+              </Link>
             </div>
 
             {/* Search Bar */}
@@ -50,11 +52,10 @@ export default function Home() {
           </div>
         </div>
       </div>
-      <Destinations/>
-      <Categories/>
-      <WhyChooseUs/>
-      <Footer/>
+      <Destinations />
+      <Categories />
+      <WhyChooseUs />
+      <Footer />
     </section>
-
   );
 }
