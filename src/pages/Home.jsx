@@ -4,6 +4,7 @@ import Categories from "../components/Categories";
 import Destinations from "./Destinations";
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
+import WhyChooseUs from "../components/WhyChooseUs";
 
 
 export default function Home() {
@@ -51,6 +52,7 @@ export default function Home() {
       </div>
       <Destinations/>
       <Categories/>
+      <WhyChooseUs/>
       <Footer/>
     </section>
 

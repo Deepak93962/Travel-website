@@ -95,11 +95,21 @@ export default [
     slug: "delhi",
     description: "India’s capital — a vibrant mix of history, markets, and food scenes across New and Old Delhi.",
     famous_places: [
-      { name: "Red Fort", description: "Historic Mughal fort and UNESCO site.", image: "delhi", image_search: "Red Fort Delhi" },
-      { name: "Qutub Minar", description: "Tall minaret and UNESCO site with Afghan architecture.", image: "assets/delhi_qutub.jpg", image_search: "Qutub Minar" },
-      { name: "India Gate", description: "War memorial and popular evening lawn.", image: "assets/india_gate.jpg", image_search: "India Gate Delhi" },
-      { name: "Humayun's Tomb", description: "Mughal tomb that inspired the Taj Mahal's architecture.", image: "assets/humayun_tomb.jpg", image_search: "Humayun's Tomb Delhi" },
-      { name: "Lotus Temple", description: "Baha'i house of worship with distinctive lotus shape.", image: "assets/lotus_temple.jpg", image_search: "Lotus Temple Delhi" }
+      { name: "Red Fort", description: "Historic Mughal fort and UNESCO site.",
+         image: "https://media.istockphoto.com/id/1002415624/photo/new-delhi-city-in-daytime.jpg?s=2048x2048&w=is&k=20&c=cRkUyMrAw-Snyaxzf14bfTrbHrejTwYVF9j8DF7Amhs=",
+          image_search: "Red Fort Delhi" },
+      { name: "Qutub Minar", description: "Tall minaret and UNESCO site with Afghan architecture.", 
+        image: "https://media.istockphoto.com/id/1258735047/photo/panoramic-qutab-minar.jpg?s=2048x2048&w=is&k=20&c=l8yQY3pWRRm0_12WdJ_WDb2ULPHRRYjTLNpR-HsQOlA=",
+        
+        image_search: "Qutub Minar" },
+      { name: "India Gate", description: "War memorial and popular evening lawn.", 
+        image: "https://media.istockphoto.com/id/2166645442/photo/india-gate-in-sunset-evening-lights-rajpath-new-delhi.jpg?s=2048x2048&w=is&k=20&c=x38oNewKaUTOh3C1_CKkNjaDKpb39dvV9n-F_vO7lSs=", image_search: "India Gate Delhi" },
+      { name: "Humayun's Tomb", description: "Mughal tomb that inspired the Taj Mahal's architecture.", 
+        image: "https://plus.unsplash.com/premium_photo-1697729698319-46d703253b35?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+         image_search: "Humayun's Tomb Delhi" },
+      { name: "Lotus Temple", description: "Baha'i house of worship with distinctive lotus shape.",
+         image: "https://images.unsplash.com/photo-1688257899811-d96d969416bf?q=80&w=1480&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D", 
+         image_search: "Lotus Temple Delhi" }
     ],
     transport: {
       train: { name: "New Delhi Railway Station", description: "One of the main rail terminals in Delhi.", image: "assets/delhi_train.jpg", image_search: "New Delhi Railway Station" },
