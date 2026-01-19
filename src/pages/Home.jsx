@@ -6,6 +6,7 @@ import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
 import WhyChooseUs from "../components/WhyChooseUs";
 import { Link } from "react-router-dom";
+import FeaturedPlaces from "../components/FeaturedPlaces";
 
 export default function Home() {
   return (
@@ -54,6 +55,7 @@ export default function Home() {
       </div>
       <Destinations />
       <Categories />
+      <FeaturedPlaces/>
       <WhyChooseUs />
       <Footer />
     </section>
